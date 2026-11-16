@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620" width="100%" height="100%">
+  <defs>
+    <!-- Navy Blue Gradients -->
+    <linearGradient id="escaleNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E2F68" />
+      <stop offset="50%" stop-color="#0A224D" />
+      <stop offset="100%" stop-color="#051535" />
+    </linearGradient>
+
+    <!-- Golden Stars Gradient -->
+    <linearGradient id="goldStar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#EAB308" />
+      <stop offset="100%" stop-color="#CA8A04" />
+    </linearGradient>
+
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="100%" stop-color="#A16207" />
+    </linearGradient>
+
+    <!-- Ball Shading Gradient -->
+    <radialGradient id="ballShade" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </radialGradient>
+
+    <!-- Ribbon Gradient -->
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="50%" stop-color="#0F2B66" />
+      <stop offset="100%" stop-color="#081A3E" />
+    </linearGradient>
+
+    <!-- Text Arcs -->
+    <!-- Top Arc for ASC ESCALE -->
+    <path id="arcTopText" d="M 120 330 A 200 200 0 0 1 480 330" fill="none" />
+    <!-- Bottom Arc for DE MBACKÉ (Curves upward so letters face upright) -->
+    <path id="arcBottomText" d="M 470 335 A 195 195 0 0 1 130 335" fill="none" />
+
+    <!-- Clip Path for Shield Interior (Stripes) -->
+    <clipPath id="shieldInnerClip">
+      <path d="M 300 185
+               C 355 185 410 208 438 245
+               C 442 272 422 305 432 338
+               C 440 372 418 410 382 440
+               L 300 502
+               L 218 440
+               C 182 410 160 372 168 338
+               C 178 305 158 272 162 245
+               C 190 208 245 185 300 185 Z" />
+    </clipPath>
+
+    <!-- Subtle Drop Shadow Filter -->
+    <filter id="badgeShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Group with Shadow -->
+  <g filter="url(#badgeShadow)">
+
+    <!-- ==================== 3 GOLDEN STARS ON TOP ==================== -->
+    <!-- Middle Major Star -->
+    <g transform="translate(300, 48)">
+      <polygon points="0,-36 10,-11 36,-11 15,4 23,28 0,14 -23,28 -15,4 -36,-11 -10,-11"
+               fill="url(#goldStar)" stroke="url(#goldBorder)" stroke-width="2.5" stroke-linejoin="round" />
+    </g>
+
+    <!-- Left Star -->
+    <g transform="translate(226, 68)">
+      <polygon points="0,-26 7,-8 26,-8 11,3 17,21 0,10 -17,21 -11,3 -26,-8 -7,-8"
+               fill="url(#goldStar)" stroke="url(#goldBorder)" stroke-width="2" stroke-linejoin="round" />
+    </g>
+
+    <!-- Right Star -->
+    <g transform="translate(374, 68)">
+      <polygon points="0,-26 7,-8 26,-8 11,3 17,21 0,10 -17,21 -11,3 -26,-8 -7,-8"
+               fill="url(#goldStar)" stroke="url(#goldBorder)" stroke-width="2" stroke-linejoin="round" />
+    </g>
+
+    <!-- ==================== MAIN CIRCULAR CREST ==================== -->
+    <!-- Outer Golden Rim Accent -->
+    <circle cx="300" cy="330" r="264" fill="none" stroke="url(#goldStar)" stroke-width="3" opacity="0.85" />
+
+    <!-- Outer Navy Ring -->
+    <circle cx="300" cy="330" r="260" fill="url(#escaleNavy)" stroke="#FFFFFF" stroke-width="6" />
+
+    <!-- Thin White Concentric Guide Ring -->
+    <circle cx="300" cy="330" r="250" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.6" />
+
+    <!-- Inner Circle Base (White Field) -->
+    <circle cx="300" cy="330" r="192" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5" />
+
+    <!-- ==================== RING TEXT: TOP & BOTTOM ==================== -->
+    <!-- Top Text: ASC ESCALE -->
+    <text fill="#FFFFFF"
+          font-family="'Impact', 'Arial Black', -apple-system, sans-serif"
+          font-size="46"
+          font-weight="900"
+          letter-spacing="5">
+      <textPath href="#arcTopText" startOffset="50%" text-anchor="middle">
+        ASC ESCALE
+      </textPath>
+    </text>
+
+    <!-- Bottom Text: DE MBACKÉ -->
+    <text fill="#FFFFFF"
+          font-family="'Impact', 'Arial Black', -apple-system, sans-serif"
+          font-size="44"
+          font-weight="900"
+          letter-spacing="5">
+      <textPath href="#arcBottomText" startOffset="50%" text-anchor="middle">
+        DE MBACKÉ
+      </textPath>
+    </text>
+
+    <!-- Left Mini Football on Navy Ring -->
+    <g transform="translate(78, 330)">
+      <circle cx="0" cy="0" r="22" fill="#FFFFFF" stroke="#0E2F68" stroke-width="2.5" />
+      <!-- Soccer ball pentagon pattern -->
+      <polygon points="0,-7 6,-2 4,6 -4,6 -6,-2" fill="#0A224D" />
+      <line x1="0" y1="-7" x2="0" y2="-18" stroke="#0A224D" stroke-width="2" />
+      <line x1="6" y1="-2" x2="16" y2="-6" stroke="#0A224D" stroke-width="2" />
+      <line x1="4" y1="6" x2="12" y2="15" stroke="#0A224D" stroke-width="2" />
+      <line x1="-4" y1="6" x2="-12" y2="15" stroke="#0A224D" stroke-width="2" />
+      <line x1="-6" y1="-2" x2="-16" y2="-6" stroke="#0A224D" stroke-width="2" />
+      <!-- Decorative White Flanking Stripes -->
+      <line x1="-18" y1="28" x2="18" y2="28" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+      <line x1="-12" y1="36" x2="12" y2="36" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+    </g>
+
+    <!-- Right Mini Football on Navy Ring -->
+    <g transform="translate(522, 330)">
+      <circle cx="0" cy="0" r="22" fill="#FFFFFF" stroke="#0E2F68" stroke-width="2.5" />
+      <polygon points="0,-7 6,-2 4,6 -4,6 -6,-2" fill="#0A224D" />
+      <line x1="0" y1="-7" x2="0" y2="-18" stroke="#0A224D" stroke-width="2" />
+      <line x1="6" y1="-2" x2="16" y2="-6" stroke="#0A224D" stroke-width="2" />
+      <line x1="4" y1="6" x2="12" y2="15" stroke="#0A224D" stroke-width="2" />
+      <line x1="-4" y1="6" x2="-12" y2="15" stroke="#0A224D" stroke-width="2" />
+      <line x1="-6" y1="-2" x2="-16" y2="-6" stroke="#0A224D" stroke-width="2" />
+      <line x1="-18" y1="28" x2="18" y2="28" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+      <line x1="-12" y1="36" x2="12" y2="36" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+    </g>
+
+    <!-- ==================== INNER SHIELD ==================== -->
+    <!-- Shield Outer Golden/Navy Border Frame -->
+    <path d="M 300 178
+             C 360 178 418 202 447 240
+             C 452 272 430 306 441 341
+             C 450 376 426 418 388 450
+             L 300 514
+             L 212 450
+             C 174 418 150 376 159 341
+             C 170 306 148 272 153 240
+             C 182 202 240 178 300 178 Z"
+          fill="url(#escaleNavy)" stroke="url(#goldStar)" stroke-width="3" />
+
+    <!-- Shield Inner White Bed -->
+    <path d="M 300 185
+             C 355 185 410 208 438 245
+             C 442 272 422 305 432 338
+             C 440 372 418 410 382 440
+             L 300 502
+             L 218 440
+             C 182 410 160 372 168 338
+             C 178 305 158 272 162 245
+             C 190 208 245 185 300 185 Z"
+          fill="#FFFFFF" />
+
+    <!-- Vertical Blue & White Stripes (Clipped inside Shield) -->
+    <g clip-path="url(#shieldInnerClip)">
+      <rect x="150" y="170" width="58" height="350" fill="url(#escaleNavy)" />
+      <rect x="270" y="170" width="60" height="350" fill="url(#escaleNavy)" />
+      <rect x="392" y="170" width="58" height="350" fill="url(#escaleNavy)" />
+    </g>
+
+    <!-- ==================== CENTRAL SOCCER BALL WITH MOTION SWOOSH ==================== -->
+    <g transform="translate(300, 335)">
+      <!-- Ball Shadow -->
+      <circle cx="3" cy="5" r="78" fill="#000000" opacity="0.25" />
+
+      <!-- Ball Sphere Body with realistic radial lighting -->
+      <circle cx="0" cy="0" r="76" fill="url(#ballShade)" stroke="#0E2F68" stroke-width="4.5" />
+
+      <!-- Central Navy Pentagon -->
+      <polygon points="0,-16 16,-4 10,16 -10,16 -16,-4" fill="url(#escaleNavy)" />
+
+      <!-- Ball Seams branching to perimeter -->
+      <line x1="0" y1="-16" x2="0" y2="-52" stroke="#0E2F68" stroke-width="3.5" />
+      <line x1="16" y1="-4" x2="48" y2="-16" stroke="#0E2F68" stroke-width="3.5" />
+      <line x1="10" y1="16" x2="32" y2="48" stroke="#0E2F68" stroke-width="3.5" />
+      <line x1="-10" y1="16" x2="-32" y2="48" stroke="#0E2F68" stroke-width="3.5" />
+      <line x1="-16" y1="-4" x2="-48" y2="-16" stroke="#0E2F68" stroke-width="3.5" />
+
+      <!-- Perimeter Pentagons / Patches -->
+      <polygon points="0,-52 -20,-65 20,-65" fill="url(#escaleNavy)" />
+      <polygon points="48,-16 68,-34 74,-8" fill="url(#escaleNavy)" />
+      <polygon points="32,48 60,45 46,68" fill="url(#escaleNavy)" />
+      <polygon points="-32,48 -46,68 -60,45" fill="url(#escaleNavy)" />
+      <polygon points="-48,-16 -74,-8 -68,-34" fill="url(#escaleNavy)" />
+
+      <!-- Dynamic Speed Swooshes wrapping underneath the ball -->
+      <path d="M -110 -10
+               C -85 45 -25 88 50 82
+               C 15 84 -45 58 -80 8
+               C -90 -5 -102 -8 -110 -10 Z"
+            fill="#FFFFFF" stroke="#0E2F68" stroke-width="2.5" />
+
+      <path d="M -90 22
+               C -65 68 -10 98 70 90
+               C 25 92 -35 72 -70 36 Z"
+            fill="#FFFFFF" stroke="#0E2F68" stroke-width="2" />
+
+      <path d="M -70 52
+               C -40 85 10 104 80 94
+               C 30 96 -20 82 -50 60 Z"
+            fill="#FFFFFF" stroke="#0E2F68" stroke-width="2" />
+    </g>
+
+    <!-- ==================== BOTTOM RIBBON & FOUNDING YEAR ==================== -->
+    <!-- Ribbon Outer Tails -->
+    <polygon points="42,478 72,420 118,450 68,498 42,478" fill="#081A3E" stroke="#FFFFFF" stroke-width="2" />
+    <polygon points="558,478 528,420 482,450 532,498 558,478" fill="#081A3E" stroke="#FFFFFF" stroke-width="2" />
+
+    <!-- Main Front Ribbon -->
+    <path d="M 62,430
+             C 165,398 245,435 300,435
+             C 355,435 435,398 538,430
+             C 544,462 518,498 478,488
+             C 418,462 348,482 300,482
+             C 252,482 182,462 122,488
+             C 82,498 56,462 62,430 Z"
+          fill="url(#ribbonGrad)" stroke="#FFFFFF" stroke-width="4.5" />
+
+    <!-- Gold Accent Line along Ribbon -->
+    <path d="M 90,442
+             C 175,416 245,445 300,445
+             C 355,445 425,416 510,442"
+          fill="none" stroke="url(#goldStar)" stroke-width="2" opacity="0.85" />
+
+    <!-- Ribbon Text: FONDÉ EN 2025 -->
+    <text x="300" y="470"
+          text-anchor="middle"
+          fill="#FFFFFF"
+          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+          font-weight="900"
+          font-size="17"
+          letter-spacing="3">
+      ★ FONDÉ EN 2025 ★
+    </text>
+
+    <!-- Lower Tip Gold Star -->
+    <g transform="translate(300, 526)">
+      <polygon points="0,-12 3.5,-4 12,-4 5,1.5 7.5,9.5 0,5 -7.5,9.5 -5,1.5 -12,-4 -3.5,-4"
+               fill="url(#goldStar)" stroke="url(#goldBorder)" stroke-width="1" />
+    </g>
+
+  </g>
+</svg>

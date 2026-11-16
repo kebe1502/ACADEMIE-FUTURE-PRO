@@ -1,0 +1,6 @@
+{
+  "name": "Académie Future Pro - Touba Mbacké",
+  "description": "Plateforme officielle de l'Académie Future Pro / ASC Dialloré (Touba, département de Mbacké, Sénégal) : effectif des joueurs, staff technique, présidence, annuaire des membres, galerie photos et actualités du club.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

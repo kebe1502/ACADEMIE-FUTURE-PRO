@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="tfcGold" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="60%" stop-color="#EAB308" />
+      <stop offset="100%" stop-color="#854D0E" />
+    </radialGradient>
+    <linearGradient id="tfcBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Circular Outer Border -->
+  <circle cx="250" cy="250" r="236" fill="url(#tfcBlue)" stroke="url(#tfcGold)" stroke-width="12" />
+  <circle cx="250" cy="250" r="218" fill="none" stroke="#FDE047" stroke-width="3" stroke-dasharray="6 5" />
+  
+  <!-- Minaret & Mosque Architecture Symbolism for Touba FC -->
+  <g transform="translate(190, 110) scale(1.2)">
+    <!-- Central Minaret Dome -->
+    <path d="M 50 10 C 35 35, 25 70, 25 100 L 75 100 C 75 70, 65 35, 50 10 Z" fill="url(#tfcGold)" />
+    <rect x="30" y="100" width="40" height="90" fill="#F8FAFC" stroke="url(#tfcGold)" stroke-width="3" />
+    <!-- Minaret Windows -->
+    <rect x="42" y="115" width="16" height="24" rx="8" fill="#1E3A8A" />
+    <rect x="42" y="150" width="16" height="24" rx="8" fill="#1E3A8A" />
+    <!-- Crescent / Star on Top -->
+    <circle cx="50" cy="8" r="5" fill="#FDE047" />
+  </g>
+
+  <!-- Soccer Ball -->
+  <g transform="translate(250, 310) scale(0.9)">
+    <circle cx="0" cy="0" r="40" fill="#FFFFFF" stroke="#0F172A" stroke-width="4" />
+    <polygon points="0,-16 15,-5 9,14 -9,14 -15,-5" fill="#0F172A" />
+    <line x1="0" y1="-16" x2="0" y2="-38" stroke="#0F172A" stroke-width="3" />
+    <line x1="15" y1="-5" x2="35" y2="-12" stroke="#0F172A" stroke-width="3" />
+    <line x1="9" y1="14" x2="24" y2="32" stroke="#0F172A" stroke-width="3" />
+    <line x1="-9" y1="14" x2="-24" y2="32" stroke="#0F172A" stroke-width="3" />
+    <line x1="-15" y1="-5" x2="-35" y2="-12" stroke="#0F172A" stroke-width="3" />
+  </g>
+
+  <!-- Arched Text Top: TOUBA FOOTBALL CLUB -->
+  <path id="tfcArcTop" d="M 65 250 A 185 185 0 0 1 435 250" fill="none" />
+  <text font-family="'Impact', 'Arial Black', sans-serif" font-size="30" font-weight="900" fill="#FDE047" letter-spacing="3">
+    <textPath href="#tfcArcTop" startOffset="50%" text-anchor="middle">
+      TOUBA FOOTBALL CLUB
+    </textPath>
+  </text>
+
+  <!-- Arched Text Bottom: FONDÉ À TOUBA -->
+  <path id="tfcArcBottom" d="M 435 255 A 185 185 0 0 1 65 255" fill="none" />
+  <text font-family="'Impact', 'Arial Black', sans-serif" font-size="24" font-weight="900" fill="#FFFFFF" letter-spacing="4">
+    <textPath href="#tfcArcBottom" startOffset="50%" text-anchor="middle">
+      VILLE SAINTE • SÉNÉGAL
+    </textPath>
+  </text>
+</svg>

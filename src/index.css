@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Empêcher tout débordement horizontal intempestif */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
+@keyframes tickerMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: tickerMarquee 44s linear infinite;
+  /* Démarrage direct au milieu du contenu (50% de la durée) plutôt qu'au tout début */
+  animation-delay: -22s;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+/* Utilitaires de masquage absolu de scrollbar pour tous les navigateurs */
+.no-scrollbar::-webkit-scrollbar,
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.no-scrollbar,
+html,
+body,
+nav,
+header {
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+}

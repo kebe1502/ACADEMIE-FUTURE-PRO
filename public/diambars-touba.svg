@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="diambarsSky" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </radialGradient>
+    <linearGradient id="diambarsGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="50%" stop-color="#EAB308" />
+      <stop offset="100%" stop-color="#854D0E" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="250" cy="250" r="236" fill="url(#diambarsSky)" stroke="url(#diambarsGold)" stroke-width="12" />
+  <circle cx="250" cy="250" r="218" fill="none" stroke="#FEF08A" stroke-width="3" stroke-dasharray="6 5" />
+
+  <!-- Soaring Eagle/Falcon for Diambars -->
+  <g transform="translate(140, 140) scale(0.9)">
+    <!-- Wings spread -->
+    <path d="M 120 40 C 70 20, 20 40, 0 80 C 40 75, 80 85, 100 110 C 60 120, 30 145, 10 180 C 50 160, 90 165, 110 185 C 100 205, 85 225, 70 240 C 100 220, 120 200, 130 180 C 140 200, 160 220, 190 240 C 175 225, 160 205, 150 185 C 170 165, 210 160, 250 180 C 230 145, 200 120, 160 110 C 180 85, 220 75, 260 80 C 240 40, 190 20, 140 40 Z" 
+          fill="url(#diambarsGold)" stroke="#78350F" stroke-width="4" />
+    <!-- Eagle Head with Sharp Beak -->
+    <circle cx="130" cy="110" r="24" fill="#FFFFFF" stroke="#78350F" stroke-width="3" />
+    <polygon points="120,105 95,115 120,122" fill="#EAB308" stroke="#78350F" stroke-width="2" />
+    <circle cx="124" cy="108" r="3" fill="#000000" />
+    <!-- Ball at the claws -->
+    <circle cx="130" cy="220" r="28" fill="#FFFFFF" stroke="#0369A1" stroke-width="3" />
+    <polygon points="130,208 140,215 136,227 124,227 120,215" fill="#0284C7" />
+  </g>
+
+  <!-- Arched Text Top: DIAMBARS TOUBA -->
+  <path id="dtArcTop" d="M 65 250 A 185 185 0 0 1 435 250" fill="none" />
+  <text font-family="'Impact', 'Arial Black', sans-serif" font-size="32" font-weight="900" fill="#FEF08A" letter-spacing="3">
+    <textPath href="#dtArcTop" startOffset="50%" text-anchor="middle">
+      ACADÉMIE DIAMBARS
+    </textPath>
+  </text>
+
+  <!-- Arched Text Bottom: PÔLE TOUBA -->
+  <path id="dtArcBottom" d="M 435 255 A 185 185 0 0 1 65 255" fill="none" />
+  <text font-family="'Impact', 'Arial Black', sans-serif" font-size="22" font-weight="900" fill="#FFFFFF" letter-spacing="3">
+    <textPath href="#dtArcBottom" startOffset="50%" text-anchor="middle">
+      PÔLE FORMATION • TOUBA
+    </textPath>
+  </text>
+</svg>
